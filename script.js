@@ -4,8 +4,6 @@ function boxClicked() {
     console.log("box clicked");
 }
 
-var boxes = document.querySelectorAll(".box");
-console.log(boxes.number); 
 
 var i = 201-300; 
 var j = 301-400; 
@@ -15,12 +13,19 @@ var m = 601-700;
 var n = 701-800; 
 var o = 801-900; 
 
-for (; i < boxes.number; i++) {
-    console.log(i);
+var boxes = document.querySelectorAll(".box");
+console.log(boxes.number); 
+
+for (var i = 0; i < boxes.number; i++) {
+    boxes[i].addEventListener("click", boxClicked);
 }
-    if (i > 300) {
-    boxes.style.backgroundColor = "yellow";
-}
+
+// for (; i < boxes.number; i++) {
+//     console.log(i);
+// }
+//     if (i > 300) {
+//     boxes.style.backgroundColor = "yellow";
+// }
 
 
 // boxes[i].addEventListener("click", boxClicked);
