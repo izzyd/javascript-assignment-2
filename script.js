@@ -7,11 +7,18 @@ function boxClicked() {
 var boxes = document.querySelectorAll(".box");
 console.log(boxes.length); 
 
-var i = 0; 
+var i = 201-300; 
+var j = 301-400; 
+var k = 401-500;
+var l = 501-600; 
+var m = 601-700; 
+var n = 701-800; 
+var o = 801-900; 
 
-for (var i = 0; i < 100; i++) {
+for (; i < 200; i++) {
     console.log(i);
-    if (i > 100)
+}
+    if (i > 100) {
     boxes.style.backgroundColor = "yellow";
 }
 
